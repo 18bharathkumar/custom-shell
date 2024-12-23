@@ -1,3 +1,4 @@
+
 # Moti Patli Shell
 
 ## Description
@@ -6,7 +7,7 @@ Moti Patli Shell is a custom terminal shell designed to provide basic file and s
 
 ## Features
 
-- **File Operations**: Create, delete, rename, list, and view files.
+- **File Operations**: Create, delete, list, and view files.
 - **System Commands**: Get the current directory, display user info, and clear the terminal.
 - **Customizations**: Change terminal background, foreground colors, and font styles.
 - **Third-Party Integrations**: Open files in Visual Studio Code or Nano editor.
@@ -17,7 +18,7 @@ Moti Patli Shell is a custom terminal shell designed to provide basic file and s
 1. **Prerequisites**:
 
    - Ensure Python 3 is installed.
-   - Compile the `code.so` shared library using `gcc` if not already compiled:
+   - Compile the `code.so` shared library using `gcc` if not already compiled.
      ```bash
      gcc -shared -o code.so -fPIC code.c
      ```
@@ -28,63 +29,30 @@ Moti Patli Shell is a custom terminal shell designed to provide basic file and s
 
    ```bash
    python3 run_shell.py
+   ```
 
+3. **Available Commands**:
 
-# File Operations
-create <filename>       # Create a new file
-delete <filename>       # Delete a file
-rename <old_filename> <new_filename>  # Rename a file
-ls                      # List all files in the current directory
+   - `create <filename>`: Create a new file.
+   - `delete <filename>`: Delete a file.
+   - `ls`: List all files in the current directory.
+   - `pwd`: Display the current directory path.
+   - `help`: Show a list of all available commands.
+   - `ping <website>`: Test the connectivity to a website.
+   - `vs <filename>`: Open a file in Visual Studio Code.
+   - `color <bg> <fg>`: Change the terminal background and foreground colors (e.g., `color black green`).
+   - `font <font> <size>`: Change the terminal font and size.
+   - `nano <filename>`: Open a file in Nano editor.
+   - `grep <text> <filename>`: Search for specific text in a file.
+   - `cat <filename>`: Display the content of a file.
+   - `whoami`: Show the current logged-in user.
+   - `sudo login`: Log in as root (password: `admin`).
+   - `clear`: Clear the terminal screen.
+   - `rename <old_filename> <new_filename>`: Rename a file.
 
-* Directory & System Info
-pwd                     # Display the current directory path
-whoami                  # Show the current logged-in user
+## Notes
 
-* Editing and Searching
-nano <filename>         # Open a file in Nano editor
-grep <text> <filename>  # Search for specific text in a file
-cat <filename>          # Display the content of a file
+- Ensure the `code.so` shared library is present in the same directory as the shell script.
+- Custom commands rely on the shared library and Bash utilities, so proper permissions are required.
 
-
-
-* Customization
-vs <filename>           # Open a file in Visual Studio Code
-color <bg> <fg>         # Change terminal background and foreground colors
-font <font> <size>      # Change terminal font and size
-
-
-* Help
-help                    # Show a list of all available commands
-
-
-
-
-* File Operations
-create <filename>       # Create a new file
-delete <filename>       # Delete a file
-rename <old_filename> <new_filename>  # Rename a file
-ls                      # List all files in the current directory
-
-* Directory & System Info
-pwd                     # Display the current directory path
-whoami                  # Show the current logged-in user
-
-* Editing and Searching
-nano <filename>         # Open a file in Nano editor
-grep <text> <filename>  # Search for specific text in a file
-cat <filename>          # Display the content of a file
-
-* Network & Utilities
-ping <website>          # Test the connectivity to a website
-clear                   # Clear the terminal screen
-
-* Customization
-vs <filename>           # Open a file in Visual Studio Code
-color <bg> <fg>         # Change terminal background and foreground colors
-font <font> <size>      # Change terminal font and size
-
-
-
-* Help
-help                    # Show a list of all available commands
-
+Enjoy using the Moti Patli Shell!

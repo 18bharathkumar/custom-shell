@@ -36,26 +36,55 @@ delete <filename>       # Delete a file
 rename <old_filename> <new_filename>  # Rename a file
 ls                      # List all files in the current directory
 
-# Directory & System Info
+* Directory & System Info
 pwd                     # Display the current directory path
 whoami                  # Show the current logged-in user
 
-# Editing and Searching
+* Editing and Searching
 nano <filename>         # Open a file in Nano editor
 grep <text> <filename>  # Search for specific text in a file
 cat <filename>          # Display the content of a file
 
-# Network & Utilities
-ping <website>          # Test the connectivity to a website
-clear                   # Clear the terminal screen
 
-# Customization
+
+* Customization
 vs <filename>           # Open a file in Visual Studio Code
 color <bg> <fg>         # Change terminal background and foreground colors
 font <font> <size>      # Change terminal font and size
 
-# Root Access
-sudo login              # Log in as root (password: 'admin')
 
-# Help
+* Help
 help                    # Show a list of all available commands
+
+
+
+
+* File Operations
+create <filename>       # Create a new file
+delete <filename>       # Delete a file
+rename <old_filename> <new_filename>  # Rename a file
+ls                      # List all files in the current directory
+
+* Directory & System Info
+pwd                     # Display the current directory path
+whoami                  # Show the current logged-in user
+
+* Editing and Searching
+nano <filename>         # Open a file in Nano editor
+grep <text> <filename>  # Search for specific text in a file
+cat <filename>          # Display the content of a file
+
+* Network & Utilities
+ping <website>          # Test the connectivity to a website
+clear                   # Clear the terminal screen
+
+* Customization
+vs <filename>           # Open a file in Visual Studio Code
+color <bg> <fg>         # Change terminal background and foreground colors
+font <font> <size>      # Change terminal font and size
+
+
+
+* Help
+help                    # Show a list of all available commands
+

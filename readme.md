@@ -28,7 +28,7 @@ Moti Patli Shell is a custom terminal shell designed to provide basic file and s
    Run the following command to start the Moti Patli Shell:
 
    ```bash
-   python3 run_shell.py
+   python3 shell.py
    ```
 
 3. **Available Commands**:
